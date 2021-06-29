@@ -1,0 +1,54 @@
+
+body {font-family: "Lato", sans-serif;
+background-color: grey;
+}
+
+.sidebar {
+
+  position: fixed;
+  top: 30%;
+  transform: translateY(-30);
+}
+h1{
+  color: whitesmoke;
+}
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: whitesmoke;
+  background: teal;
+  display: block;
+  position: relative;
+  box-shadow: 2px 2px 16px 0px rgba(0, 0, 0, 75);
+  margin: 5px 0;
+ transition:  0.5s;
+  width: 200px;
+  margin-left: -176px;
+  border-radius: 0 5px 5px 0;
+}
+.sidebar a span
+{
+  float:right;
+  width: 70px;
+  height: 100%;
+  text-align:center;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.sidebar a:hover {
+  color: black;
+  margin-left: 0;
+}
+
+.main {
+  margin-left: 100px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
